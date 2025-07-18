@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <div className={css.app}>
-      <SearchBar onSubmit={handleSearch} />
+      <SearchBar action={handleSearch} />
 
       {loading && <Loader />}
       {error && <ErrorMessage />}
